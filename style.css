@@ -1,1 +1,36 @@
-<!DOCTYPE css>
+* {
+    box-sizing: border-box;
+}
+
+footer {
+    text-align: center;
+    background-color: aquamarine;
+    padding: 20px;
+    margin: 10px;
+    border: 2.5px;
+    border-style: solid;
+    border-color: black;
+}
+
+.navigation {
+    background-color:rgb(21, 147, 151);
+    padding: 10px;
+    margin: 10px;
+    border: 2.5px;
+    border-style: solid;
+    border-color: black;
+}
+
+#main {
+    background-color: aqua;
+    padding: 20px;
+    margin: 10px;
+    border: 2.5px;
+    border-style: solid;
+    border-color: black;
+}
+
+main p.content{ 
+    color:black;
+
+}
