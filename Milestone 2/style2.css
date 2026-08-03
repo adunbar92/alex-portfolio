@@ -54,6 +54,7 @@ ul.navigation {
 div.content {
     display:grid;
     grid-template-columns: 1fr;
+    gap: 24px;
 }
 
 
@@ -61,7 +62,7 @@ div.content {
 div.content {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 16px;
+    gap: 24px;
 
 }
 }
