@@ -83,7 +83,7 @@ p {
     font-family: "inter", sans-serif;
 }
 
-footer {
+.footer {
     text-align: center;
     background-color: rgba(129, 183, 192, 0.479);
     width: 100%;
