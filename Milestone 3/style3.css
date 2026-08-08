@@ -33,13 +33,13 @@ a:hover {
     color: cyan;
 }
 
+
 @media (min-width: 768px) {
 ul.navigation {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-evenly;
-    max-width: 95%;
 }
 }
 #main {
@@ -58,6 +58,7 @@ div.content {
     display:grid;
     grid-template-columns: 1fr;
     gap: 16px;
+    margin: auto;
 }
 
 
@@ -79,10 +80,17 @@ div.content {
 }
 }
 
-h1, h2 {
+h1 {
     font-family: "lora", serif;
+    text-decoration: underline; 
+    font-size: 2rem;
 }
 
+h2 {
+    font-family: "lora", serif;
+    font-size: 1.5rem;
+    text-decoration: underline;
+}
 
 .footer {
     text-align: center;
@@ -129,4 +137,47 @@ article {
     border-style: solid;
     border-color: black;
 
+}
+
+fieldset {
+
+display: grid;
+grid-template-columns: 1fr;
+justify-items: left;
+border-radius: 8px;
+
+}
+
+fieldset legend {
+    font-family: "lora", serif;
+    font-size: 1.25rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+input, textarea {
+font-family: "inter", sans-serif;
+width: 100%;
+padding: 8px;
+margin: 8px 0px 8px 0px;
+border: 2px;
+border-style: solid;
+border-color: rgb(245, 243, 243);
+border-radius: 8px;
+
+}
+
+label {
+font-family: "inter", sans-serif;
+font-size: .9rem;
+}
+
+input::placeholder, textarea::placeholder {
+    color:black;
+}
+
+button {
+    background-color: rgba(223, 240, 245, 0.692);
+    margin-top: 8px;
+    font-weight: bold;
 }
