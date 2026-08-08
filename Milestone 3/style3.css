@@ -80,9 +80,6 @@ h1, h2 {
     font-family: "lora", serif;
 }
 
-p { 
-    font-family: "inter", sans-serif;
-}
 
 .footer {
     text-align: center;
@@ -102,4 +99,14 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+}
+
+p { 
+    font-family: "inter", sans-serif;
+}
+
+.contact ul {
+    list-style: none;
+    font-family: "inter", sans-serif;
+    padding: 0;
 }
