@@ -10,7 +10,7 @@ WAVE Results: /assets/WAVE.jpeg
 
 Similarity: I formatted the articles the same so that viewers intuit the content is grouped. 
 
-Proximity:  I grouped the form together in a fieldset to show all inputs are related.
+Proximity:  I grouped the form together to show all inputs are related.
 
 Figure ground: I used contrasting colors to bring content to the forefront.
 

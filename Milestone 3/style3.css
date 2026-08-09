@@ -26,7 +26,7 @@ a {
 }
 
 a:visited {
-    color: rgb(176, 176, 255);
+    color: rgb(176, 217, 255);
 }
 
 a:hover {
@@ -106,7 +106,7 @@ h2 {
 }
 
 .footer p {
-color: rgb(245, 243, 243);
+    color: rgb(245, 243, 243);
 }
 
 body {
@@ -141,10 +141,10 @@ article {
 
 fieldset {
 
-display: grid;
-grid-template-columns: 1fr;
-justify-items: left;
-border-radius: 8px;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: left;
+    border-radius: 8px;
 
 }
 
@@ -156,21 +156,19 @@ fieldset legend {
 }
 
 input, textarea {
-font-family: "inter", sans-serif;
-width: 100%;
-padding: 8px;
-margin: 8px 0px 8px 0px;
-border: 2px;
-border-style: solid;
-border-color: rgb(245, 243, 243);
-border-radius: 8px;
-
+    font-family: "inter", sans-serif;
+    width: 100%;
+    padding: 8px;
+    margin: 8px 0px 8px 0px;
+    border-color: rgb(245, 243, 243);
+    border-radius: 8px;
 }
 
 label {
-font-family: "inter", sans-serif;
-font-size: .9rem;
+    font-family: "inter", sans-serif;
+    font-size: .9rem;
 }
+
 
 input::placeholder, textarea::placeholder {
     color:black;
@@ -186,30 +184,48 @@ button {
   display: none;  
 }
 
+#first-name:user-invalid {
+    border: 4px;
+    border-style: solid;
+    border-color: rgb(255, 187, 0)
+}
+
+#last-name:user-invalid {
+    border: 4px;
+    border-style: solid;
+    border-color: rgb(255, 187, 0)
+}
+
+#email:user-invalid {
+    border: 4px;
+    border-style: solid;
+    border-color: rgb(255, 187, 0)
+}
+
+#message:user-invalid {
+    border: 4px;
+    border-style: solid;
+    border-color: rgb(255, 187, 0)
+}
+
 #first-name:user-invalid + .error-message {
     font-weight: bold;
     display: block;
-    border: 2px;
-    border-color: red;
-    color: red;
+    color: rgb(255, 230, 0);
     margin: 8px 0px 8px 0px;
 }
 
 #last-name:user-invalid + .error-message {
     font-weight: bold;
     display: block;
-    border: 2px;
-    border-color: red;
-    color: red;
+    color: rgb(255, 230, 0);
     margin: 8px 0px 8px 0px;
 }
 
 #email:user-invalid + #email-invalid {
     font-weight: bold;
     display: block;
-    border: 2px;
-    border-color: red;
-    color: red;
+    color: rgb(255, 230, 0);
     margin: 8px 0px 8px 0px;
 }
 
@@ -217,8 +233,6 @@ button {
 #message:user-invalid + .error-message {
     font-weight: bold;
     display: block;
-    border: 2px;
-    border-color: red;
-    color: red;
+    color: rgb(255, 230, 0);
     margin: 8px 0px 8px 0px;
 }
