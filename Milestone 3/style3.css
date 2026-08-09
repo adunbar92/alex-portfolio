@@ -181,3 +181,44 @@ button {
     margin-top: 8px;
     font-weight: bold;
 }
+
+.error-message {
+  display: none;  
+}
+
+#first-name:user-invalid + .error-message {
+    font-weight: bold;
+    display: block;
+    border: 2px;
+    border-color: red;
+    color: red;
+    margin: 8px 0px 8px 0px;
+}
+
+#last-name:user-invalid + .error-message {
+    font-weight: bold;
+    display: block;
+    border: 2px;
+    border-color: red;
+    color: red;
+    margin: 8px 0px 8px 0px;
+}
+
+#email:user-invalid + #email-invalid {
+    font-weight: bold;
+    display: block;
+    border: 2px;
+    border-color: red;
+    color: red;
+    margin: 8px 0px 8px 0px;
+}
+
+
+#message:user-invalid + .error-message {
+    font-weight: bold;
+    display: block;
+    border: 2px;
+    border-color: red;
+    color: red;
+    margin: 8px 0px 8px 0px;
+}
