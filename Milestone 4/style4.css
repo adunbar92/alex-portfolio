@@ -164,11 +164,10 @@ fieldset legend {
     font-weight: bold;
 }
 
+
 input, textarea {
     font-family: "inter", sans-serif;
-    width: 100%;
-    padding: 8px;
-    margin: 8px 0px 8px 0px;
+    width: 90%;
     border-color: rgb(245, 243, 243);
     border-radius: 8px;
 }
@@ -193,55 +192,6 @@ button {
   display: none;  
 }
 
-#first-name:user-invalid {
-    border: 4px;
-    border-style: solid;
-    border-color: rgb(255, 187, 0)
-}
-
-#last-name:user-invalid {
-    border: 4px;
-    border-style: solid;
-    border-color: rgb(255, 187, 0)
-}
-
-#email:user-invalid {
-    border: 4px;
-    border-style: solid;
-    border-color: rgb(255, 187, 0)
-}
-
-#message:user-invalid {
-    border: 4px;
-    border-style: solid;
-    border-color: rgb(255, 187, 0)
-}
-
-#first-name:user-invalid + .error-message {
-    font-weight: bold;
+.show-error {
     display: block;
-    color: rgb(255, 230, 0);
-    margin: 8px 0px 8px 0px;
-}
-
-#last-name:user-invalid + .error-message {
-    font-weight: bold;
-    display: block;
-    color: rgb(255, 230, 0);
-    margin: 8px 0px 8px 0px;
-}
-
-#email:user-invalid + #email-invalid {
-    font-weight: bold;
-    display: block;
-    color: rgb(255, 230, 0);
-    margin: 8px 0px 8px 0px;
-}
-
-
-#message:user-invalid + .error-message {
-    font-weight: bold;
-    display: block;
-    color: rgb(255, 230, 0);
-    margin: 8px 0px 8px 0px;
 }
