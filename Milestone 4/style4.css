@@ -2,7 +2,24 @@
     box-sizing: border-box;
 }
 
-nav {
+.navigation {
+    display: none;
+    list-style: none;
+}
+
+.navigation.show-menu {
+    display: grid;
+    grid-template-columns: 1fr;
+    width:90%;
+    justify-items: center;
+    list-style: none;
+}
+
+#menu-button {
+    margin: 8px;
+}
+
+header {
     background-color:rgba(0, 33, 39, 0.479);
     width: 100%;
     border: 4px;
@@ -12,15 +29,9 @@ nav {
     border-color: black;
     border-radius: 16px;
     font-family: "roboto", sans-serif;
+    
 }
 
-ul.navigation {
-    display: grid;
-    grid-template-columns: 1fr;
-    width:90%;
-    justify-items: center;
-    list-style: none;
-}
 
 a {
     color: rgb(245, 243, 243);
@@ -34,9 +45,8 @@ a:hover {
     color: cyan;
 }
 
-
 @media (min-width: 768px) {
-ul.navigation {
+.navigation.show-menu {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -45,24 +55,20 @@ ul.navigation {
 }
 }
 
-#main {
-    color: rgb(245, 243, 243);
-    background-color: rgba(216, 221, 221, 0.445);
+main {
+    background-color:rgba(0, 33, 39, 0.479);
     width: 100%;
+    border: 2px;
+    margin: 32px auto;
     border: 4px;
-    padding: 16px;
-    margin: 0 auto 16px auto;
     border-style: solid;
     border-color: black;
     border-radius: 16px;
-
 }
 
 #main * {
-
 padding: 16px;
 margin: 8px;
-
 }
 
 div.content {
@@ -140,24 +146,16 @@ p {
 
 article {
 
-    padding: 24px;
+    padding: 16px;
     margin: 0 auto 8px auto;
     border: 2px;
-    background-color: lab(33.21% -15.93 -14.21);
+    background-color: lab(99.64% -1.63 -0.58 / 0.466);
     border-radius: 16px;
     border-style: solid;
     border-color: black;
 
 }
 
-fieldset {
-
-    display: grid;
-    grid-template-columns: 1fr;
-    justify-items: left;
-    border-radius: 8px;
-
-}
 
 fieldset legend {
     font-family: "lora", serif;

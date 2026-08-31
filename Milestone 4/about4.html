@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+            <title>About</title>
+                <link rel="preconnect" href="https://fonts.googleapis.com">
+                <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+                <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lora:ital,wght@0,400..700;1,400..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+                <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+                <link rel="stylesheet" href="style4.css">
+                <script src="script.js" defer></script>
+    </head>
+       <body>  
+             <header>
+                <button id="menu-button" type="button">☰</button>
+                    <ul class="navigation">
+                        <li><a href="index4.html">Home</a></li>
+                        <li><a href="about4.html">About/Contact</a></li>                       
+                        <li><a href="work4.html">Projects/Work</a></li>
+                    </ul>
+            </header>              
+        <main>
+            <section id="main">
+                <div class="content">
+                    <article class="about">
+                        <h1>About Me</h1>
+                            <p>Here I will include a personal image gallery.</p>
+                    </article>
+                    <article class="story"> 
+                        <h2>My Story</h2>
+                            <p> Hi, my name is Alex. I am a second year IT student at Campus with experience in web development. Here you will find my story.</p>
+                    </article>  
+                    <article class="contact">
+                        <h2>Contact Me</h2>
+                            <p>Feel free to reach out to me at:</p>
+                            <p>adunbar2@my.campus.edu</p>
+                            <p>or by submitting the contact form below.</p>
+                           <form class="contact" action="mailto:adunbar2@my.campus.edu" method="post" enctype="text/plain">
+                                <fieldset> 
+                                    <legend>Contact Form</legend>
+                                        <label for="first-name">First Name:</label>
+                                            <input id="first-name" type="text" name="first-name" placeholder="First Name" aria-describedby="first-name-empty" required>
+                                                <p id="first-name-empty" class="error-message"> Field is required. </p>                                        
+                                        <label for="last-name">Last Name:</label>
+                                            <input id="last-name" type="text" name="last-name" placeholder="Last Name" aria-describedby="last-name-empty" required>
+                                                <p id="last-name-empty" class="error-message"> Field is required. </p>
+                                        <label for="email">Email:</label>
+                                            <input id="email" type="email" name="email" placeholder="Email" aria-describedby="email-invalid" required>
+                                                <p id="email-invalid" class="error-message"> Valid email is required. </p>
+                                         <label for="message">Message:</label>
+                                                <textarea id="message" name="message" placeholder="Your message here" aria-describedby="message-empty" required></textarea>
+                                                <p id="message-empty" class="error-message"> Field is required. </p>
+                                             <button class="submit" type="submit">Submit</button>
+                                </fieldset>  
+                            </form>
+                    </article>
+                </div>
+            </section>
+        </main>
+            <footer class="footer">
+                <p>All rights reserved.</p>
+            </footer>
+            </div>
+        </body>
+</html>
