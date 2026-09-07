@@ -67,8 +67,8 @@ main {
 }
 
 #main * {
-padding: 16px;
-margin: 8px;
+padding: 8px;
+margin: 4px;
 }
 
 div.content {
@@ -95,6 +95,22 @@ div.content {
     gap: 8px;
 
 }
+}
+
+div.error-message {
+    font-family: "inter", sans-serif;
+    padding: 8px;
+    margin: 0 auto 8px auto;
+    color: rgb(218, 8, 8);
+    font-weight: bold;
+}
+
+div.success-message {
+    font-family: "inter", sans-serif;
+    padding: 8px;
+    margin: 0 auto 8px auto;
+    color: green;
+    font-weight: bold;
 }
 
 h1 {
