@@ -8,60 +8,51 @@ menuButton.addEventListener("click", () => {
 const contactForm = document.querySelector(".contact")
 const firstName = document.querySelector("#first-name")
 const firstNameEmpty = document.querySelector("#first-name-empty")
-
-contactForm.addEventListener("submit", (event) => { 
-if(firstName.value === "") {
-    event.preventDefault();
-    firstNameEmpty.classList.add("show-error");
-}
-});
-
-firstName.addEventListener("input", () => {
-firstNameEmpty.classList.remove("show-error");
-
-});
-
 const lastName = document.querySelector("#last-name")
 const lastNameEmpty = document.querySelector("#last-name-empty")
-
-contactForm.addEventListener("submit", (event) => { 
-if(lastName.value === "") {
-    event.preventDefault();
-    lastNameEmpty.classList.add("show-error");
-}
-});
-
-lastName.addEventListener("input", () => {
-lastNameEmpty.classList.remove("show-error");
-
-});
-
 const email = document.querySelector("#email")
 const emailInvalid = document.querySelector("#email-invalid")
-
-contactForm.addEventListener("submit", (event) => { 
-if(email.value === "") {
-    event.preventDefault();
-    emailInvalid.classList.add("show-error");
-}
-});
-
-email.addEventListener("input", () => {
-emailInvalid.classList.remove("show-error");
-
-});
-
 const message = document.querySelector("#message")
 const messageEmpty = document.querySelector("#message-empty")
+const submissionSuccess = document.querySelector("#submission-success")
+
+const validateForm = (inputBox, errorLabel, message) => {
+   if(inputBox.value.trim() === "") {
+errorLabel.textContent = message;
+    return false;
+   }else{
+errorLabel.textContent = "";
+    return true;
+   }
+}
+
+const validateEmail = () =>{
+    if(email.value.trim() === "") {
+    emailInvalid.textContent = "Email is required.";
+    return false;
+   }
+   if(!email.value.includes("@")){
+    emailInvalid.textContent = "Email is invalid.";
+    return false;
+   }
+
+   emailInvalid.textContent = "";
+   return true;
+}
 
 contactForm.addEventListener("submit", (event) => { 
-if(message.value === "") {
     event.preventDefault();
-    messageEmpty.classList.add("show-error");
-}
+    const isFirstNameValid =validateForm(firstName,firstNameEmpty,"First Name is required.");
+    const isLastNameValid = validateForm(lastName,lastNameEmpty,"Last Name is required.");
+    const isMessageValid = validateForm(message,messageEmpty,"Message is required.");
+    const isEmailValid = validateEmail();
+    
+    if(isFirstNameValid && isLastNameValid && isEmailValid && isMessageValid) {
+        submissionSuccess.textContent = "Successful!";
+        contactForm.reset();
+    }else{
+        submissionSuccess.textContent = "";
+    }
+
 });
 
-message.addEventListener("input", () => {
-messageEmpty.classList.remove("show-error");
-
-});
