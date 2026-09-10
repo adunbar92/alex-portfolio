@@ -14,8 +14,21 @@
     list-style: none;
 }
 
+
+button {
+    background-color: rgba(223, 240, 245, 0.692);
+    margin-top: 4px;
+    font-weight: bold;
+    border-radius: 6px;
+}
+
 #menu-button {
-    margin: 8px;
+   padding: 4px 8px;
+}
+
+
+.navbutton {
+padding: 8px;
 }
 
 header {
@@ -33,15 +46,15 @@ header {
 
 
 a {
-    color: rgb(245, 243, 243);
+    color: rgb(0, 0, 0);
 }
 
 a:visited {
-    color: rgb(224, 223, 255);
+    color: rgb(23, 1, 104);
 }
 
 a:hover {
-    color: cyan;
+    color: rgb(0, 99, 99);
 }
 
 @media (min-width: 768px) {
@@ -197,14 +210,6 @@ input::placeholder, textarea::placeholder {
     color:black;
 }
 
-button {
-    background-color: rgba(223, 240, 245, 0.692);
-    margin-top: 8px;
-    font-weight: bold;
-    border-radius: 4px;
-}
- button#load {
-    margin-top: 8px;
-    font-weight: bold;
-    border-radius: 4px;
- }
+
+
+ 
