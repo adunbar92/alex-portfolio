@@ -9,7 +9,6 @@
 .navigation.show-menu {
     display: grid;
     grid-template-columns: 1fr;
-    width:90%;
     justify-items: center;
     list-style: none;
 }
@@ -17,9 +16,10 @@
 
 button {
     background-color: rgba(223, 240, 245, 0.692);
-    margin-top: 4px;
+    margin-top: 16px;
     font-weight: bold;
     border-radius: 6px;
+    font-size: .9rem;
 }
 
 #menu-button {
@@ -32,16 +32,35 @@ padding: 8px;
 }
 
 header {
-    background-color:rgba(0, 33, 39, 0.479);
+    background-color:rgba(0, 33, 39, 0.685);
     width: 100%;
-    border: 4px;
     padding: 8px;
     margin: 0 auto 16px auto;
-    border-style: solid;
-    border-color: black;
-    border-radius: 16px;
     font-family: "roboto", sans-serif;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.747);
     
+}
+
+
+h1 {
+    font-family: "lora", serif;
+    font-size: 1rem;
+    text-align: center;
+    font-weight: bold;
+    color: rgba(167, 194, 202, 0.986);
+    margin-top: -64px;
+    margin-bottom: 8px;
+    padding: 8px;
+    text-decoration: underline; 
+    font-size: 2rem;
+    
+}
+
+
+h2 {
+    font-family: "lora", serif;
+    font-size: 1.5rem;
+    text-decoration: underline;
 }
 
 
@@ -68,14 +87,10 @@ a:hover {
 }
 
 main {
-    background-color:rgba(0, 33, 39, 0.479);
-    width: 100%;
-    border: 2px;
+    background-color:rgba(0, 33, 39, 0.637);
     margin: 32px auto;
-    border: 4px;
-    border-style: solid;
-    border-color: black;
-    border-radius: 16px;
+    padding: 16px;
+
 }
 
 #main * {
@@ -86,7 +101,7 @@ margin: 4px;
 div.content {
     display:grid;
     grid-template-columns: 1fr;
-    gap: 16px;
+    gap: 8px;
     margin: auto;
 }
 
@@ -125,33 +140,18 @@ div.success-message {
     font-weight: bold;
 }
 
-h1 {
-    font-family: "lora", serif;
-    text-decoration: underline; 
-    font-size: 2rem;
-}
-
-h2 {
-    font-family: "lora", serif;
-    font-size: 1.5rem;
-    text-decoration: underline;
-}
-
 .footer {
     text-align: center;
-    background-color: rgba(0, 33, 39, 0.479);
+    background-color: rgba(0, 33, 39, 0.61);
     width: 100%;
     padding: 16px;
-    margin: 0 auto 16px auto;
-    border: 4px;
-    border-style: solid;
-    border-color: black;
-    border-radius: 16px;
+    background-color:rgba(0, 33, 39, 0.685);
     font-family: "roboto", sans-serif;
 }
 
 .footer p {
-    color: rgb(245, 243, 243);
+    color: rgb(221, 247, 248);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.747);
 }
 
 body {
@@ -160,6 +160,8 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
 }
 
 p { 
