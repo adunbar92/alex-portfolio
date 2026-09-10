@@ -90,6 +90,7 @@ main {
     background-color:rgba(0, 33, 39, 0.637);
     margin: 32px auto;
     padding: 16px;
+    align-items: center;
 
 }
 
@@ -98,11 +99,15 @@ padding: 8px;
 margin: 4px;
 }
 
-div.content {
-    display:grid;
-    grid-template-columns: 1fr;
-    gap: 8px;
-    margin: auto;
+div.gallery {
+    padding: 16px;
+    margin: 0 auto 16px auto;
+    border: 2px;
+    background-color: lab(99.64% -1.63 -0.58 / 0.466);
+    border-radius: 16px;
+    border-style: solid;
+    border-color: black;
+
 }
 
 
@@ -116,7 +121,7 @@ div.content {
 }
 
 @media (min-width: 1200px) {
-div.content {
+.three-column-page div.content {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 8px;
@@ -138,6 +143,18 @@ div.success-message {
     margin: 0 auto 8px auto;
     color: green;
     font-weight: bold;
+}
+
+div.personal-image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+div.gallery-image-container img {
+    width: 100%;
+    height: auto;
 }
 
 .footer {
