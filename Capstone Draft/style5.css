@@ -88,8 +88,8 @@ a:hover {
 
 main {
     background-color:rgba(0, 33, 39, 0.637);
-    margin: 32px auto;
-    padding: 16px;
+    margin: 16px auto;
+    padding: 8px;
     align-items: center;
 
 }
@@ -101,7 +101,7 @@ margin: 4px;
 
 div.gallery {
     padding: 16px;
-    margin: 0 auto 16px auto;
+    margin: 0 auto 8px auto;
     border: 2px;
     background-color: lab(99.64% -1.63 -0.58 / 0.466);
     border-radius: 16px;
@@ -146,7 +146,7 @@ div.success-message {
 }
 
 div.personal-image-gallery {
-    display: flex;
+    display: inline-flex;
     flex-wrap: wrap;
     justify-content: center;
 }
@@ -194,7 +194,7 @@ p {
 article {
 
     padding: 16px;
-    margin: 0 auto 8px auto;
+    margin: 8px auto 8px auto;
     border: 2px;
     background-color: lab(99.64% -1.63 -0.58 / 0.466);
     border-radius: 16px;
@@ -202,7 +202,6 @@ article {
     border-color: black;
 
 }
-
 
 fieldset legend {
     font-family: "lora", serif;
