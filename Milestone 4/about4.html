@@ -25,18 +25,35 @@
         <main>
             <section id="main">
                 <div class="about">
+                    <div class="gallery-background">
+                        <h2>About Me</h2>
+                           <div class="personal-image-gallery">
+                                <div class="image-container">
+                                    <img src="assets/photo1.jpg" alt="Personal Image" height="400">
+                                </div>
+                                <div class="image-container">
+                                    <img src="assets/photo2.jpg" alt="Personal Image"height="400">
+                                </div>
+                                <div class="image-container">
+                                    <img src="assets/photo3.jpg" alt="Personal Image" height="400">
+                                </div>
+                                <div class="image-container">
+                                    <img src="assets/photo4.jpg" alt="Personal Image" height="400">
+                                </div>
+                            </div>
+                        </div>
                         <div class="content">
                         <article class="story"> 
                         <h2>My Story</h2>
                             <p> Hi, my name is Alex. I am a second year IT student at Campus with experience in web development. Here you will find my story.</p>
                     </article>  
-                    <article class="contact">
+                    <article class="contact-info">
                         <h2>Contact Me</h2>
                             <p>Feel free to reach out to me at:</p>
                             <p>adunbar2@my.campus.edu</p>
                             <p>or by submitting the contact form below.</p>
                            <form class="contact" novalidate action="mailto:adunbar2@my.campus.edu" method="post" enctype="text/plain">
-                                <fieldset> 
+                                <fieldset id="contact-form"> 
                                     <legend>Contact Form</legend>
                                         <label for="first-name">First Name:</label>
                                             <input id="first-name" type="text" name="first-name" placeholder="First Name" aria-describedby="first-name-empty" required>
@@ -61,6 +78,7 @@
             <footer class="footer">
                 <p>All rights reserved.</p>
             </footer>
+            </div>
             </div>
         </body>
 </html>
