@@ -203,6 +203,15 @@ p {
     padding: 0;
 }
 
+.contact-instructions {
+    font-family: "inter", sans-serif;
+    font-size: 1rem;
+    line-height: 2;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto 8px auto;
+}
+
 article {
     padding: 16px;
     margin: 16px;
@@ -216,6 +225,9 @@ article {
 #contact-form {
     display: flex;
     flex-direction: column;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
 
 }
 
