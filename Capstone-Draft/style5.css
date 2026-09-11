@@ -22,6 +22,16 @@ button {
     font-size: .9rem;
 }
 
+.submit{
+    background-color: rgba(223, 240, 245, 0.692);
+    margin-top: 16px;
+    margin-left: 16px;
+    font-weight: bold;
+    border-radius: 6px;
+    font-size: .9rem;
+}
+
+
 #menu-button {
    padding: 4px 8px;
 }
@@ -222,13 +232,16 @@ input, textarea {
     border-color: rgb(245, 243, 243);
     border-radius: 8px;
     margin: 8px 0 8px 0;
-
+    width: 100%;
+    max-width: 400px;
+    align-self: center;
 }
 
 label {
     font-family: "inter", sans-serif;
     font-size: .9rem;
     margin: 4px 0 4px 0;
+    
 }
 
 
