@@ -105,6 +105,19 @@ div.gallery-background {
 
 }
 
+.personal-image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+}
+
+.personal-image-gallery img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 8px;
+}
 
 @media (min-width: 768px) {
 div.content {
@@ -142,13 +155,6 @@ div.success-message {
     margin: 0 auto 8px auto;
     color: green;
     font-weight: bold;
-}
-
-div.personal-image-gallery {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 16px;
 }
 
 .footer {
@@ -193,7 +199,6 @@ article {
     border-radius: 16px;
     border-style: solid;
     border-color: black;
-
 }
 
 #contact-form {
