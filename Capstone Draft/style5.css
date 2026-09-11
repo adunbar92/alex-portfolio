@@ -61,6 +61,7 @@ h2 {
     font-family: "lora", serif;
     font-size: 1.5rem;
     text-decoration: underline;
+    text-align: center;
 }
 
 
@@ -91,17 +92,11 @@ main {
     margin: 16px auto;
     padding: 8px;
     align-items: center;
-
 }
 
-#main * {
-padding: 8px;
-margin: 4px;
-}
-
-div.gallery {
+div.gallery-background {
+    margin: 16px;
     padding: 16px;
-    margin: 0 auto 8px auto;
     border: 2px;
     background-color: lab(99.64% -1.63 -0.58 / 0.466);
     border-radius: 16px;
@@ -137,6 +132,10 @@ div.error-message {
     font-weight: bold;
 }
 
+.error-message:empty {
+    display: none;
+}
+
 div.success-message {
     font-family: "inter", sans-serif;
     padding: 8px;
@@ -146,15 +145,10 @@ div.success-message {
 }
 
 div.personal-image-gallery {
-    display: inline-flex;
+    display: flex;
     flex-wrap: wrap;
     justify-content: center;
-}
-
-
-div.gallery-image-container img {
-    width: 100%;
-    height: auto;
+    gap: 16px;
 }
 
 .footer {
@@ -192,14 +186,19 @@ p {
 }
 
 article {
-
     padding: 16px;
-    margin: 8px auto 8px auto;
+    margin: 16px;
     border: 2px;
     background-color: lab(99.64% -1.63 -0.58 / 0.466);
     border-radius: 16px;
     border-style: solid;
     border-color: black;
+
+}
+
+#contact-form {
+    display: flex;
+    flex-direction: column;
 
 }
 
@@ -213,14 +212,16 @@ fieldset legend {
 
 input, textarea {
     font-family: "inter", sans-serif;
-    width: 90%;
     border-color: rgb(245, 243, 243);
     border-radius: 8px;
+    margin: 8px 0 8px 0;
+
 }
 
 label {
     font-family: "inter", sans-serif;
     font-size: .9rem;
+    margin: 4px 0 4px 0;
 }
 
 
