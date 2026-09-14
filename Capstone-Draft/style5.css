@@ -74,6 +74,17 @@ h2 {
     text-align: center;
 }
 
+h3 { 
+    font-family: "lora", serif;
+    font-size: 1.25rem;
+    text-align: center;   
+}
+
+h4 { 
+    font-family: "lora", serif;
+    font-size: 1rem;
+    text-align: left;   
+}
 
 a {
     color: rgb(0, 0, 0);
@@ -87,6 +98,14 @@ a:hover {
     color: rgb(0, 99, 99);
 }
 
+div.content {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 8px;
+    margin: 0;
+
+}
+
 @media (min-width: 768px) {
 .navigation.show-menu {
     display: flex;
@@ -95,7 +114,19 @@ a:hover {
     width: 100%;
     justify-content: space-evenly;
 }
+
+.two-column-page div.content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+
 }
+
+.portfolio-gallery a {
+    width: calc(50% - 8px);
+}
+}
+
 
 main {
     background-color:rgba(0, 33, 39, 0.637);
@@ -120,37 +151,60 @@ div.gallery-background {
     flex-wrap: wrap;
     justify-content: center;
     gap: 16px;
+    max-width: max-content;
 }
 
 .personal-image-gallery img {
     width: 100%;
-    max-width: 300px;
+    max-width: 400px;
     height: auto;
     border-radius: 8px;
 }
 
-@media (min-width: 768px) {
-div.content {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 8px;
-
+.portfolio-gallery, .showcase-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 32px;
+    max-width: 900px;
+    margin: 0 auto;
 }
+
+.portfolio-gallery a, .showcase-gallery a {
+    width: 100%;
+    max-width: 400px;
 }
 
-@media (min-width: 1200px) {
-.three-column-page div.content {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 8px;
-
+.portfolio-gallery img, .showcase-gallery img{
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
 }
+
+.intro-image-container{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.intro-image-container img{
+    margin: 32px auto;
+    width: 100%;
+    max-width: 550px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.js-showcase {
+
+    margin:48px;
 }
 
 div.error-message {
     font-family: "inter", sans-serif;
     padding: 8px;
-    margin: 0 auto 8px auto;
+    text-align: center;
     color: rgb(218, 8, 8);
     font-weight: bold;
 }
@@ -238,6 +292,7 @@ article {
     border-radius: 16px;
     border-style: solid;
     border-color: black;
+   
 }
 
 #contact-form {
@@ -261,6 +316,7 @@ input, textarea {
     font-family: "inter", sans-serif;
     border-color: rgb(245, 243, 243);
     border-radius: 8px;
+    padding: 8px;
     margin: 8px 0 8px 0;
     width: 100%;
     max-width: 400px;
