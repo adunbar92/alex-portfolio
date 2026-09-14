@@ -212,6 +212,24 @@ p {
     margin: 0 auto 8px auto;
 }
 
+.skills {
+    font-family: "lora", serif;
+    font-size: 1.5rem;
+    text-decoration: underline;
+    text-align: center;
+}
+
+.skills-list {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    column-gap: 40px;
+    row-gap: 8px;
+    list-style: none;
+    font-family: "inter", sans-serif;
+    padding: 0;
+}
+
 article {
     padding: 16px;
     margin: 16px;
