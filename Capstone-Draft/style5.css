@@ -151,7 +151,7 @@ div.gallery-background {
     flex-wrap: wrap;
     justify-content: center;
     gap: 16px;
-    max-width: max-content;
+    width: 100%;
 }
 
 .personal-image-gallery img {
@@ -181,6 +181,7 @@ div.gallery-background {
     height: auto;
     border-radius: 8px;
 }
+
 
 .intro-image-container{
     display: flex;
