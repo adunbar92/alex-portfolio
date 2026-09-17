@@ -58,10 +58,11 @@ if (contactForm) {contactForm.addEventListener("submit", (event) => {
 }
 
 const url = "https://api.open-meteo.com/v1/forecast?latitude=42.36&longitude=-71.06&current=temperature_2m&temperature_unit=fahrenheit";
-let result =  document.querySelector("#weather-result");
-const loadButton = document.querySelector("#load") 
-  if (loadButton) {
-loadButton.addEventListener("click", () => {
+document.addEventListener("DOMContentLoaded", () => {
+    const result = document.querySelector ("#weather-result")
+    const weather = true;
+    if (weather) {
+   
       fetch(url)
         .then(res => {
           if (!res.ok) throw new Error("Bad Status: " + res.status);
@@ -69,5 +70,5 @@ loadButton.addEventListener("click", () => {
         })
         .then(data => { result.textContent = "Temp: " + data.current.temperature_2m + " F";})
         .catch(() =>{result.textContent = "Sorry, couldn't load the data. Try again.";});
-    });
-}
+    };
+});

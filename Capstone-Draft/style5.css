@@ -47,7 +47,6 @@ header {
     padding: 8px;
     margin: 0 auto 16px auto;
     font-family: "roboto", sans-serif;
-    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.747);
     
 }
 
@@ -62,6 +61,7 @@ h1 {
     margin-bottom: 8px;
     padding: 8px;
     text-decoration: underline; 
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.747);
     font-size: 2rem;
     
 }
@@ -127,6 +127,10 @@ div.content {
 }
 }
 
+#weather {
+    display: flex;
+    justify-content: flex-end;
+}
 
 main {
     background-color:rgba(0, 33, 39, 0.637);
