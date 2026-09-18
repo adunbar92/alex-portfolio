@@ -127,6 +127,24 @@ div.content {
 }
 }
 
+@media (min-width: 1200px) {
+
+.three-column-page div.content {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+
+}
+
+.three-column-page div.gallery-background {
+
+    display: grid;
+
+}
+
+}
+
 #weather {
     display: flex;
     justify-content: flex-end;
