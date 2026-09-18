@@ -3,99 +3,86 @@
 }
 
 .navigation {
-    display: none;
-}
-
-.navigation.show-menu {
-    display: grid;
-    grid-template-columns: 1fr;
-    justify-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 0px;
     list-style: none;
+    padding: 0;
 }
 
-
-button {
-    background-color: rgba(223, 240, 245, 0.692);
-    margin-top: 16px;
-    font-weight: bold;
-    border-radius: 6px;
-    font-size: .9rem;
-}
 
 .submit{
+    padding: 8px;
     background-color: rgba(223, 240, 245, 0.692);
-    margin-top: 16px;
-    margin-left: 16px;
+    margin-top: 8px;
     font-weight: bold;
-    border-radius: 6px;
-    font-size: .9rem;
+    border-radius: 16px;
+    font-size: .8rem;
+    border: none;
+    border-radius: 16px;
 }
 
-
-#menu-button {
-   padding: 4px 8px;
+.submit:hover {
+background-color: rgb(0, 33, 39);
+color: rgba(223, 240, 245, 0.842);  
 }
-
 
 .navbutton {
-padding: 8px;
+    padding: 8px;
+    background-color: rgba(223, 240, 245, 0.692);
+    margin-top: 16px;
+    font-weight: bold;
+    border-radius: 16px;
+    font-size: .8rem;
 }
+
+.navbutton:hover{
+background-color: rgb(0, 33, 39);
+color: rgba(223, 240, 245, 0.842);
+font-weight: bold;
+}
+
 
 header {
     background-color:rgba(0, 33, 39, 0.685);
     width: 100%;
-    padding: 8px;
-    margin: 0 auto 16px auto;
     font-family: "roboto", sans-serif;
+    padding: 8px; margin: 0 auto 16px auto;
     
 }
 
 
 h1 {
     font-family: "lora", serif;
-    font-size: 1rem;
+    font-size: 1.5rem;
     text-align: center;
     font-weight: bold;
     color: rgba(191, 219, 228, 0.986);
-    margin-top: -64px;
-    margin-bottom: 8px;
-    padding: 8px;
+    margin-top:0;
+    padding-bottom: 16px;
     text-decoration: underline; 
     text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.747);
-    font-size: 2rem;
     
 }
 
 
 h2 {
     font-family: "lora", serif;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     text-decoration: underline;
     text-align: center;
 }
 
 h3 { 
     font-family: "lora", serif;
-    font-size: 1.25rem;
+    font-size: 1.1rem;
     text-align: center;   
 }
 
-h4 { 
-    font-family: "lora", serif;
-    font-size: 1rem;
-    text-align: left;   
-}
-
 a {
-    color: rgb(0, 0, 0);
-}
-
-a:visited {
-    color: rgb(7, 104, 12);
-}
-
-a:hover {
-    color: rgb(0, 99, 99);
+    color: rgb(2, 45, 53);
+    text-decoration: none;
 }
 
 div.content {
@@ -106,48 +93,27 @@ div.content {
 
 }
 
-@media (min-width: 768px) {
-.navigation.show-menu {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    width: 100%;
-    justify-content: space-evenly;
-}
-
-.two-column-page div.content {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 16px;
-
-}
-
-.portfolio-gallery a {
-    width: calc(50% - 8px);
-}
-}
-
-@media (min-width: 1200px) {
-
-.three-column-page div.content {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    justify-content: space-between;
-
-}
-
-.three-column-page div.gallery-background {
-
-    display: grid;
-
-}
-
-}
-
 #weather {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
+    padding:16px;
+    font-size: 1rem;
+    color: rgba(223, 240, 245, 0.842);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.747);
+    font-weight: bold;
+}
+
+#weather-result {
+ font-size: 1rem;
+}
+
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 400px;
+    margin: 32px auto;
+
 }
 
 main {
@@ -158,8 +124,8 @@ main {
 }
 
 div.gallery-background {
-    margin: 16px;
-    padding: 16px;
+    padding: 8px;
+    margin: 8px auto;
     border: 2px;
     background-color: lab(99.64% -1.63 -0.58 / 0.466);
     border-radius: 16px;
@@ -178,9 +144,10 @@ div.gallery-background {
 
 .personal-image-gallery img {
     width: 100%;
-    max-width: 400px;
+    max-width: 300px;
     height: auto;
     border-radius: 8px;
+    border: 2px solid black;
 }
 
 .portfolio-gallery, .showcase-gallery {
@@ -202,27 +169,33 @@ div.gallery-background {
     width: 100%;
     height: auto;
     border-radius: 8px;
+    border: 2px;
+    border-style: solid;
+    border-color: black;
 }
 
 
 .intro-image-container{
     display: flex;
     justify-content: center;
+    margin: 56px auto;
     
 }
 
 .intro-image-container img{
-    margin: 32px auto;
     width: 100%;
-    max-width: 550px;
+    max-width: 450px;
     height: auto;
     border-radius: 8px;
+    border: 2px;
+    border-style: solid;
+    border-color: black;
 }
 
-.js-showcase {
-
-    margin:48px;
+.showcase-gallery {
+    padding-top: 16px;
 }
+
 
 div.error-message {
     font-family: "inter", sans-serif;
@@ -270,7 +243,7 @@ body {
 
 p { 
     font-family: "inter", sans-serif;
-    font-size: 1rem;
+    font-size: .9rem;
     line-height: 2;
 }
 
@@ -291,7 +264,6 @@ p {
 
 .skills {
     font-family: "lora", serif;
-    font-size: 1.5rem;
     text-decoration: underline;
     text-align: center;
 }
@@ -300,31 +272,23 @@ p {
     display: grid;
     grid-template-columns: auto auto;
     justify-content: center;
-    column-gap: 40px;
-    row-gap: 8px;
+    column-gap: 30px;
+    font-size: .9rem;
+    row-gap: 4px;
     list-style: none;
     font-family: "inter", sans-serif;
     padding: 0;
 }
 
 article {
-    padding: 16px;
-    margin: 16px;
+    padding: 8px;
+    margin: 8px;
     border: 2px;
     background-color: lab(99.64% -1.63 -0.58 / 0.466);
     border-radius: 16px;
     border-style: solid;
     border-color: black;
    
-}
-
-#contact-form {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    max-width: 400px;
-    margin: 0 auto;
-
 }
 
 fieldset legend {
@@ -358,6 +322,96 @@ input::placeholder, textarea::placeholder {
     color:black;
 }
 
+@media (min-width: 768px) {
 
+.navbutton, .submit{
+font-size: .9rem;
+}
+
+h1 {
+    font-size: 1.8rem;
+    
+}
+
+h2 {
+    font-size: 1.45rem;
+;
+}
+
+h3 { 
+    font-size: 1.2rem; 
+}
+
+#contact-form {
+    margin-top: 48px;
+}
+
+
+.personal-image-gallery img {
+    max-width: 350px;
+}
+
+.two-column-page div.content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+}
+
+.sidebar #main { 
+    display: grid; 
+    grid-template-columns: 1fr; 
+}
+
+.sidebar #main .content {
+grid-template-columns: 1fr 1fr;
+}
+
+.portfolio-gallery a {
+    width: calc(50% - 8px);
+}
+}
+
+@media (min-width: 1200px) {
+
+.sidebar #main .about {
+    display: grid;
+}
+
+#contact-form {
+    margin-top: 56px;
+}
+
+
+.navbutton, .submit{
+font-size: 1rem;
+}
+
+h1 {
+    font-size: 2rem;
+    
+}
+
+h2 {
+    font-size: 1.6rem;
+    padding: 16px 8px;
+;
+}
+
+h3 { 
+    font-size: 1.45rem; 
+}
+
+
+.sidebar #main { 
+    display: grid; 
+    grid-template-columns: 2fr 1fr; 
+    gap: 16px;
+}
+
+.sidebar #main .content{
+    grid-template-columns: 1fr;
+}
+
+}
 
  

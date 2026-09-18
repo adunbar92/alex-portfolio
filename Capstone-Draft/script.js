@@ -1,9 +1,3 @@
-const menuButton = document.querySelector("#menu-button");
-const menu = document.querySelector(".navigation");
-
-menuButton.addEventListener("click", () => {
-  menu.classList.toggle("show-menu");
-});
 
 const contactForm = document.querySelector(".contact")
 const firstName = document.querySelector("#first-name")
@@ -57,18 +51,26 @@ if (contactForm) {contactForm.addEventListener("submit", (event) => {
 });
 }
 
-const url = "https://api.open-meteo.com/v1/forecast?latitude=42.36&longitude=-71.06&current=temperature_2m&temperature_unit=fahrenheit";
+const url = "https://api.open-meteo.com/v1/forecast?latitude=38.58&longitude=-121.49&current=temperature_2m&temperature_unit=fahrenheit";
 document.addEventListener("DOMContentLoaded", () => {
-    const result = document.querySelector ("#weather-result")
-    const weather = true;
-    if (weather) {
-   
+    const result = document.querySelector ("#weather-result");
+    if (result) {
       fetch(url)
         .then(res => {
           if (!res.ok) throw new Error("Bad Status: " + res.status);
           return res.json();
         })
-        .then(data => { result.textContent = "Temp: " + data.current.temperature_2m + " F";})
+        .then(data => { result.textContent = "Sacramento " + " Weather:" + " " +data.current.temperature_2m + " F";})
         .catch(() =>{result.textContent = "Sorry, couldn't load the data. Try again.";});
-    };
+    }
 });
+
+const submitButtons = document.querySelectorAll("button");
+
+if (submitButtons) {
+submitButtons.forEach((button) => {
+    button.addEventListener("click", () => {
+        button.textContent= "Clicked!";   
+    });
+});
+}
