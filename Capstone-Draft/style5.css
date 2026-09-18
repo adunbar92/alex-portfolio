@@ -279,7 +279,7 @@ p {
 }
 
 article {
-    padding: 8px;
+    padding: 16px;
     margin: 8px;
     background-color: lab(99.64% -1.63 -0.58 / 0.466);
     border-radius: 16px;
@@ -344,6 +344,7 @@ h3 {
 
 .personal-image-gallery img {
     max-width: 350px;
+    margin: 16px 0;
 }
 
 .two-column-page div.content {
@@ -399,19 +400,20 @@ h3 {
 
 p {
 
-font-size: 1rem;
+    font-size: 1rem;
+    margin: 16px;
 }
 
 .skills {
 
-margin-top: 96px;
+    margin-top: 96px;
 
 }
 
 .skills-list {
-font-size: 1rem;
-column-gap: 80px;
-row-gap: 8px;
+    font-size: 1rem;
+    column-gap: 80px;
+    row-gap: 8px;
 }
 
 .sidebar #main { 
@@ -422,6 +424,11 @@ row-gap: 8px;
 
 .sidebar #main .content{
     grid-template-columns: 1fr;
+}
+
+.personal-image-gallery img {
+    max-width: 350px;
+    margin: 32px 0;
 }
 
 }
