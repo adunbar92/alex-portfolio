@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>About</title>
+                <link rel="preconnect" href="https://fonts.googleapis.com">
+                <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+                <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lora:ital,wght@0,400..700;1,400..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+                <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+                <link rel="stylesheet" href="style5.css">
+                <script src="script.js" defer></script>
+    </head>
+       <body class="sidebar">  
+             <header>
+                <p class="title-text"><h1>Alex Dunbar's Portfolio</h1></p>
+                <ul class="navigation">
+                    <li><a class="navbutton" href="index5.html">Home</a></li>
+                    <li><a class="navbutton" href="about5.html">About</a></li>                       
+                    <li><a class="navbutton" href="work5.html">Projects</a></li>
+                </ul>
+            </header>              
+        <main>
+            <section id="main">
+                <div class="about">
+                    <div class="gallery-background">
+                        <h2>About Me</h2>
+                           <div class="personal-image-gallery">
+                                <div class="image-container">
+                                    <img src="assets/photo1.jpg" alt="Photo of a woman and a man in Times Square">
+                                </div>
+                                <div class="image-container">
+                                    <img src="assets/photo2.jpg" alt="Photo of a woman posing with Chewbacca from Star Wars">
+                                </div>
+                                <div class="image-container">
+                                    <img src="assets/photo3.jpg" alt="Photo of a woman and a man posing in a 1977 Chevy Impala">
+                                </div>
+                                <div class="image-container">
+                                    <img src="assets/photo4.jpg" alt="Photo of a woman on a boat on the ocean">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                        <div class="content">
+                        <article class="story"> 
+                        <h2>My Story</h2>
+                            <p> I started my journey as the operations leader for a higher education institution, overseeing regulatory compliance, data management, and cross-departmental collaboration. Though I did not have a degree myself, I had always wanted to further my education. When I found Campus, it was a perfect fit. I decided to pursue my passion for technology. I am now COMPTIA A+ certified with over a year of in field experience as an IT Technician. 
+I am always looking to gain new skills and expand my knowledge!</p>
+                    </article>  
+                    <article class="contact-info">
+                        <h2>Contact Me</h2>
+                            <p class="contact-instructions">Feel free to reach out to me at:</p>
+                            <p class="contact-instructions">adunbar2@my.campus.edu</p>
+                            <p class="contact-instructions">or by submitting the contact form below.</p>
+                           <form class="contact" novalidate action="mailto:adunbar2@my.campus.edu" method="post" enctype="text/plain">
+                                <fieldset id="contact-form"> 
+                                    <legend>Contact Form</legend>
+                                        <label for="first-name">First Name:</label>
+                                            <input id="first-name" type="text" name="first-name" placeholder="First Name" aria-describedby="first-name-empty" required>
+                                                <div id="first-name-empty" class="error-message"></div>                                        
+                                        <label for="last-name">Last Name:</label>
+                                            <input id="last-name" type="text" name="last-name" placeholder="Last Name" aria-describedby="last-name-empty" required>
+                                                <div id="last-name-empty" class="error-message"></div>
+                                        <label for="email">Email:</label>
+                                            <input id="email" type="email" name="email" placeholder="Email" aria-describedby="email-invalid" required>
+                                                <div id="email-invalid" class="error-message"></div>
+                                         <label for="message">Message:</label>
+                                                <textarea id="message" name="message" placeholder="Your message here" aria-describedby="message-empty" required></textarea>
+                                                <div id="message-empty" class="error-message"></div>
+                                                <div id="submission-success" class="success-message"></div>
+                                </fieldset>  
+                            <button class="submit" type="submit">Submit</button>
+                            </form>
+                    </article>
+                </div>
+            </section>
+        </main>
+            <footer class="footer">
+                <p>All rights reserved.</p>
+            </footer>
+            </div>
+            </div>
+        </body>
+</html>>
