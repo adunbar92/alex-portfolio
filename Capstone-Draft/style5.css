@@ -125,7 +125,7 @@ main {
 
 div.gallery-background {
     padding: 8px;
-    margin: 8px auto;
+    margin: 8px;
     background-color: lab(99.64% -1.63 -0.58 / 0.466);
     border-radius: 16px;
 
