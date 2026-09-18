@@ -401,6 +401,10 @@ h3 {
     font-size: 1.45rem; 
 }
 
+p {
+
+font-size: 1rem;
+}
 
 .sidebar #main { 
     display: grid; 
